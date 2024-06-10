@@ -1,0 +1,89 @@
+body {
+    background: var(--black);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10%;
+
+    width: 100vw;
+    height: 15vh;
+}
+
+header img {
+    width: 120px;
+}
+
+header nav ul {
+    display: flex;
+
+    gap: 1.5rem;
+
+    font-size: 1.3rem;
+    color: var(--white);
+    letter-spacing: .1rem;
+}
+
+header nav ul li {
+    transition: .3s;
+}
+
+header nav ul li span {
+    color: var(--red);
+}
+
+header nav ul li:hover {
+    color: var(--red);
+    transform: scale(1.08);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+
+    width: 100vw;
+    height: 85vh;
+
+    padding-inline: 10%;
+}
+
+.card {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 5px;
+    background-image: linear-gradient(144deg, var(--red), var(--black) 50%, var(--red));
+
+    transition: .3s;
+
+    cursor: pointer;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 10px;
+}
+.logoMusic {
+    filter: invert(1);
+}
+  
+.card__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
